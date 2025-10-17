@@ -1,19 +1,135 @@
+# IDE and Editor files
 *.iml
 *.idea
-*~
-.vagrant/
-.DS_Store
-target/
+.vscode/settings.json
+.vscode/launch.json
 .project
 .settings/
 .classpath
+
+# OS-specific files
+*~
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Vagrant
+.vagrant/
+
+# Java/Maven
+target/
+*.jar
+*.war
+*.ear
+*.class
+
+# Python
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+.python-version
+
+# uv (Python package manager)
+#uv.lock
+#.uv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+.pnp.*
+
+# Docker
+Dockerfile.tmp
+docker-compose.override.yml
+
+# Vespa specific
 vespaapps_index.json
 open_index.json
-_site/
+vespa-feed-client-cli/
+vespa-feed-client-cli.zip
+
+# Security and certificates
 *.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.keystore
+*.truststore
+security/clients.pem
+tls/
+pki/
+
+# Jekyll/GitHub Pages
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Testing and build artifacts
 test/__pycache__
 _work/
 links-to-check.html
-vespa-feed-client-cli/
-vespa-feed-client-cli.zip
-**/__pycache__/
+coverage/
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
+
+# Application specific data
+data/
+dataset/feed_*.jsonl
+*.zip
+*.tar.gz
+*.tgz
+
+# Environment and configuration files that may contain secrets
+.env
+.env.local
+.env.*.local
+secrets.toml
+config.json
+credentials.json
+
+# Streamlit
+.streamlit/secrets.toml
